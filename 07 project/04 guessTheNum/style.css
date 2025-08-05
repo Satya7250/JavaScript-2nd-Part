@@ -1,0 +1,127 @@
+/* General Styles */
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Game Container */
+#wrapper {
+  box-sizing: border-box;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  padding: 30px 20px;
+  background-color: #474747;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+h1 {
+  background-color: #161616;
+  margin: 0 0 20px 0;
+  padding: 15px 0;
+  font-size: 28px;
+  border-radius: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Label */
+#guess {
+  font-size: 24px;
+  margin-top: 30px;
+  display: block;
+  color: #fff;
+}
+
+/* Input Field */
+#guessField {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  font-size: 24px;
+  border: 3px solid #6c6d6d;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 0 10px;
+  text-align: center;
+  color: #000;
+}
+
+/* Submit Button */
+#subt {
+  background-color: #161616;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#subt:hover {
+  background-color: #2a2a2a;
+}
+
+/* Previous Guesses and Remaining Attempts */
+.guesses,
+.lastResult {
+  background-color: #5a5a5a;
+  padding: 7px;
+  margin: 10px auto;
+  width: fit-content;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Result Message */
+.lowOrHi h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #ffd700;
+  transition: transform 0.3s ease;
+}
+
+.lowOrHi h2:hover {
+  transform: scale(1.05);
+}
+
+/* Restart Game Button (injected dynamically) */
+.button {
+  margin-top: 30px;
+}
+
+.button h2 {
+  background-color: #141414;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  font-size: 22px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button h2:hover {
+  background-color: #2a2a2a;
+}
